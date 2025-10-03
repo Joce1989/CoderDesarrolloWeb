@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "bebas neue", sans-serif;
+  background: linear-gradient(to right, #f046dc 20%, #d107d5 100%);
+}
+body .productos {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+body section .lun {
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+body section .PanelImg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+body section .PanelImg a {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+}
+body section .PanelImg a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body section .PanelImg a img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+body section .baner {
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/banner.jpg);
+  color: rgb(0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body section .sobreMi {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+body section .sobreMi2 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  color: whitesmoke;
+}
+body section .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+body section .grid .di1 {
+  grid-area: 1/1/6/3;
+}
+body section .grid .di2 {
+  grid-area: 1/3/2/4;
+}
+body section .grid .di3 {
+  grid-area: 1/4/2/5;
+}
+body section .grid .di4 {
+  grid-area: 1/5/2/6;
+}
+body section .grid .di5 {
+  grid-area: 2/3/3/4;
+}
+body section .grid .di6 {
+  grid-area: 2/4/3/5;
+}
+body section .grid .di7 {
+  grid-area: 2/5/3/6;
+}
+body section .grid .di8 {
+  grid-area: 3/3/4/4;
+}
+body section .grid .di9 {
+  grid-area: 3/4/4/5;
+}
+body section .grid .di10 {
+  grid-area: 3/5/4/6;
+}
+body section .grid .di11 {
+  grid-area: 4/3/5/4;
+}
+body section .grid .di12 {
+  grid-area: 4/4/5/5;
+}
+body section .grid .di13 {
+  grid-area: 4/5/5/6;
+}
+body section .grid .di14 {
+  grid-area: 5/3/6/4;
+}
+body section .grid .di15 {
+  grid-area: 5/4/6/5;
+}
+body section .grid .di16 {
+  grid-area: 5/5/6/6;
+}
+body article .accordion-body {
+  background-color: rgb(195, 72, 240) !important;
+}
+body article .accordion-button {
+  background-color: rgb(241, 129, 228);
+}
+body .parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  align-items: start;
+}
+body .parent .div1 {
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+body .parent .div1 form {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body .parent .div1 form .msj {
+  background-color: rgb(245, 119, 230);
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+body .parent .div1 form .msj:hover {
+  background-color: rgb(195, 72, 240);
+}
+body .parent .div2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(249, 93, 231);
+  gap: 1rem;
+}
+body .parent .div2 img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+body .parent .div2 img:hover {
+  transform: scale(1.05);
+}
+body div .text-break {
+  font-size: 2rem;
+  color: #f8f9fd;
+  text-align: justify;
+  padding: 2.5rem;
+  margin: 1rem;
+}
+
+header nav {
+  padding: 0 !important;
+}
+header nav .container-fluid {
+  background: linear-gradient(to right, #f046dc 20%, #a203a5 100%);
+}
+header nav .container-fluid .navbar-brand img {
+  width: 3em;
+}
+header button {
+  background-color: rgb(245, 119, 230);
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+header button:hover {
+  background-color: rgb(195, 72, 240);
+}
+
+footer {
+  padding: 20px;
+  color: #CECFD2;
+  text-align: center;
+  background-color: black;
+}
+footer .redes-sociales ul {
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+  list-style: none;
+  margin-bottom: 15px;
+}
+footer .redes-sociales a {
+  color: #CECFD2;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  list-style: none;
+}
+footer .redes-sociales a:hover {
+  color: #CECFD2;
+}
+footer .lista {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 15px;
+}
+footer .lista ul {
+  list-style: none;
+}
+footer .lista a {
+  color: #CECFD2;
+  text-decoration: none;
+}
+footer .lista a:hover {
+  text-decoration: underline;
+}
+footer .suscripcion {
+  margin-bottom: 15px;
+}
+footer input[type=email] {
+  border-radius: 5px;
+  border: 1px solid rgba(230, 88, 235, 0.7);
+  padding: 10px;
+  width: 200px;
+  font-size: 0.9rem;
+}
+footer button {
+  background-color: rgb(230, 32, 206);
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+footer button:hover {
+  background-color: rgba(230, 88, 235, 0.7);
+}
+
+/*MEDIAS*/
+@media screen and (max-width: 480px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+  .productos {
+    padding: 1.5rem 0.5rem;
+  }
+  .lun {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+  .baner {
+    background-image: none;
+    height: 50px;
+    background-color: #000000;
+    color: #f8f9fd;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .lun {
+    font-size: 1.8rem;
+  }
+  .accordion-button {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .productos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*Contactp*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .parent {
+    grid-template-columns: 1fr 1fr;
+  }
+  .div2 {
+    grid-template-columns: 1fr;
+  }
+  .div2 img:nth-child(2),
+  .div2 img:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .parent {
+    grid-template-columns: 1fr;
+  }
+  .div2 {
+    display: none;
+  }
+  .sobreMi {
+    font-size: 1rem;
+  }
+  .sobreMi2 {
+    font-size: 0.8rem;
+  }
+  .text-break {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=stilito.css.map */

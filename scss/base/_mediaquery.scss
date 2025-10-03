@@ -1,0 +1,77 @@
+/*MEDIAS*/
+
+@media screen and (max-width: 480px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .productos {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .lun {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    .baner {
+        background-image: none;
+        height: 50px;
+        background-color: #000000;
+        color: #f8f9fd;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .lun {
+        font-size: 1.8rem;
+    }
+
+    .accordion-button {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .productos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*Contactp*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .parent {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .div2 {
+        grid-template-columns: 1fr;
+    }
+
+    .div2 img:nth-child(2),
+    .div2 img:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .parent {
+        grid-template-columns: 1fr;
+    }
+
+    .div2 {
+        display: none;
+    }
+
+    .sobreMi {
+        font-size: 1rem;
+    }
+
+    .sobreMi2 {
+        font-size: 0.8rem;
+    }
+
+    .text-break {
+        font-size: 1.5rem;
+    }
+}

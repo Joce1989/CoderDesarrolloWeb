@@ -1,0 +1,62 @@
+footer {
+    padding: 20px;
+    color: #CECFD2;
+    text-align: center;
+    background-color: black;
+    .redes-sociales{
+        ul{
+            display: flex;
+    justify-content: left;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 15px;
+        }
+        a{
+            color: #CECFD2;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    list-style: none;
+    &:hover{
+        color: #CECFD2;
+    }
+        }
+    }
+    .lista{
+        display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 15px;
+    ul{
+    list-style: none;
+    }
+    a{
+        color: #CECFD2;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+    }
+    }
+    .suscripcion{
+        margin-bottom: 15px;
+    }
+    input[type="email"] {
+    border-radius: 5px;
+    border: 1px solid rgba(230, 88, 235, 0.7);
+    padding: 10px;
+    width: 200px;
+    font-size: 0.9rem;
+}
+button{
+    background-color: rgb(230, 32, 206);
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    &:hover{
+        background-color: rgba(230, 88, 235, 0.7);
+    }
+}
+}

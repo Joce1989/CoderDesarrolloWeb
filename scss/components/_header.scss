@@ -1,0 +1,25 @@
+header{
+    nav{
+        padding: 0 !important;
+        .container-fluid {
+    background: linear-gradient(to right, #f046dc 20%, #a203a5 100%);
+    .navbar-brand{
+        img{
+            width: 3em;
+        }
+    }
+}
+    }
+    button {
+    background-color: rgb(245, 119, 230);
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    &:hover{
+        background-color: rgb(195, 72, 240);
+    }
+}
+}
