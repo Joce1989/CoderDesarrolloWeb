@@ -270,75 +270,34 @@ button:hover {
 /*Productos grilla*/
 .grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 5px;
+}
+
+div .set {
+    width: 20%;
+    aspect-ratio: 2/2;
+    border-radius: 2%;
+    transition: transform 0.3s ease;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
+}
+
+div .set:hover {
+    transform: scale(1.2);
 }
 
 .di1 {
-    grid-area: 1 / 1 / 6 / 3;
+    grid-area: 1 / 1 / 3 / 2;
+    border-radius: 50%;
 }
 
 .di2 {
-    grid-area: 1 / 3 / 2 / 4;
+    grid-area: 1 / 2 / 3 / 3;
 }
 
-.di3 {
-    grid-area: 1 / 4 / 2 / 5;
-}
-
-.di4 {
-    grid-area: 1 / 5 / 2 / 6;
-}
-
-.di5 {
-    grid-area: 2 / 3 / 3 / 4;
-}
-
-.di6 {
-    grid-area: 2 / 4 / 3 / 5;
-}
-
-.di7 {
-    grid-area: 2 / 5 / 3 / 6;
-}
-
-.di8 {
-    grid-area: 3 / 3 / 4 / 4;
-}
-
-.di9 {
-    grid-area: 3 / 4 / 4 / 5;
-}
-
-.di10 {
-    grid-area: 3 / 5 / 4 / 6;
-}
-
-.di11 {
-    grid-area: 4 / 3 / 5 / 4;
-}
-
-.di12 {
-    grid-area: 4 / 4 / 5 / 5;
-}
-
-.di13 {
-    grid-area: 4 / 5 / 5 / 6;
-}
-
-.di14 {
-    grid-area: 5 / 3 / 6 / 4;
-}
-
-.di15 {
-    grid-area: 5 / 4 / 6 / 5;
-}
-
-.di16 {
-    grid-area: 5 / 5 / 6 / 6;
-}
 
 
 
@@ -364,6 +323,24 @@ button:hover {
         background-color: #000000;
         color: #f8f9fd;
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .di1 img,
+    .di2 img {
+        display: block;
+        overflow: hidden;
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -373,6 +350,24 @@ button:hover {
 
     .accordion-button {
         font-size: 1.2rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .di1 img,
+    .di2 img {
+        display: inline-block;
+        overflow: hidden;
+        width: 40%;
+        height: 40%;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 }
 
@@ -396,6 +391,7 @@ button:hover {
     .div2 img:nth-child(3) {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 991px) {
