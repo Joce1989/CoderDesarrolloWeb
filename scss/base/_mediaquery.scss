@@ -20,6 +20,23 @@
         background-color: #000000;
         color: #f8f9fd;
     }
+.Grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    
+    .di1 img,
+    .di2 img {
+        display: block;
+        overflow: hidden;
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -29,6 +46,22 @@
 
     .accordion-button {
         font-size: 1.2rem;
+    }
+.Grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+        .di1 img,
+    .di2 img {
+        display: inline-block;
+        overflow: hidden;
+        width: 40%;
+        height: 40%;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
     }
 }
 

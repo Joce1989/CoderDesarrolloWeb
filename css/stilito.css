@@ -68,61 +68,6 @@ body section .sobreMi2 {
   text-align: center;
   color: whitesmoke;
 }
-body section .grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-body section .grid .di1 {
-  grid-area: 1/1/6/3;
-}
-body section .grid .di2 {
-  grid-area: 1/3/2/4;
-}
-body section .grid .di3 {
-  grid-area: 1/4/2/5;
-}
-body section .grid .di4 {
-  grid-area: 1/5/2/6;
-}
-body section .grid .di5 {
-  grid-area: 2/3/3/4;
-}
-body section .grid .di6 {
-  grid-area: 2/4/3/5;
-}
-body section .grid .di7 {
-  grid-area: 2/5/3/6;
-}
-body section .grid .di8 {
-  grid-area: 3/3/4/4;
-}
-body section .grid .di9 {
-  grid-area: 3/4/4/5;
-}
-body section .grid .di10 {
-  grid-area: 3/5/4/6;
-}
-body section .grid .di11 {
-  grid-area: 4/3/5/4;
-}
-body section .grid .di12 {
-  grid-area: 4/4/5/5;
-}
-body section .grid .di13 {
-  grid-area: 4/5/5/6;
-}
-body section .grid .di14 {
-  grid-area: 5/3/6/4;
-}
-body section .grid .di15 {
-  grid-area: 5/4/6/5;
-}
-body section .grid .di16 {
-  grid-area: 5/5/6/6;
-}
 body article .accordion-body {
   background-color: rgb(195, 72, 240) !important;
 }
@@ -207,6 +152,38 @@ header button:hover {
   background-color: rgb(195, 72, 240);
 }
 
+/*Productos grilla*/
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin: 2px;
+}
+
+.di1 {
+  grid-area: 1/1/3/2;
+}
+
+.di2 {
+  grid-area: 1/2/3/3;
+}
+
+.di1 img, .di2 img {
+  width: 40%;
+  aspect-ratio: 3/3;
+  border-radius: 2%;
+  transition: transform 0.3s ease;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 4px 15px rgb(0, 0, 0);
+}
+.di1 img:hover, .di2 img:hover {
+  transform: scale(1.2);
+}
+
+/*div .set:hover {
+    transform: scale(1.2);
+}*/
 footer {
   padding: 20px;
   color: #CECFD2;
@@ -286,6 +263,22 @@ footer button:hover {
     background-color: #000000;
     color: #f8f9fd;
   }
+  .Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .Grid .di1 img,
+  .Grid .di2 img {
+    display: block;
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .lun {
@@ -293,6 +286,22 @@ footer button:hover {
   }
   .accordion-button {
     font-size: 1.2rem;
+  }
+  .Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .Grid .di1 img,
+  .Grid .di2 img {
+    display: inline-block;
+    overflow: hidden;
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1200px) {
