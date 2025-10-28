@@ -1,25 +1,53 @@
-header{
-    nav{
-        padding: 0 !important;
-        .container-fluid {
-    background: linear-gradient(to right, #f046dc 20%, #a203a5 100%);
-    .navbar-brand{
-        img{
-            width: 3em;
-        }
-    }
+@mixin color-fondo {
+    background-color: black;
 }
-    }
-    button {
-    background-color: rgb(245, 119, 230);
+
+@mixin color-boton {
+    background-color: rgb(230, 32, 206);
+}
+
+@mixin color-letra {
+    color: #fff;
+}
+
+%boton {
     border-radius: 15px;
     border: none;
-    color: #fff;
     padding: 8px 15px;
     cursor: pointer;
     font-size: 0.9rem;
-    &:hover{
-        background-color: rgb(195, 72, 240);
+
+    &:hover {
+        background-color: rgba(230, 88, 235, 0.7);
     }
 }
+
+
+
+header {
+    nav {
+        padding: 0 !important;
+
+        .container-fluid {
+            @include color-fondo;
+
+            .navbar-brand {
+                img {
+                    width: 3em;
+                }
+            }
+
+            .navbar-nav {
+                .nav-link {
+                    @include color-letra;
+                }
+            }
+        }
+    }
+}
+
+button {
+    @extend %boton;
+    @include color-boton;
+    @include color-letra;
 }

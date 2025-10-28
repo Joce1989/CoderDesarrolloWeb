@@ -6,6 +6,56 @@
   box-sizing: border-box;
 }
 
+button {
+  border-radius: 15px;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+button:hover {
+  background-color: rgba(230, 88, 235, 0.7);
+}
+
+header nav {
+  padding: 0 !important;
+}
+header nav .container-fluid {
+  background-color: black;
+}
+header nav .container-fluid .navbar-brand img {
+  width: 3em;
+}
+header nav .container-fluid .navbar-nav .nav-link {
+  color: #fff;
+}
+
+button {
+  background-color: rgb(230, 32, 206);
+  color: #fff;
+}
+
+/*caracteristicas para los sobre mi*/
+body section .sobreMi2, body section .sobreMi {
+  font-weight: lighter;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .parent .div1 form .msj {
+  border-radius: 25px;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  cursor: pointer;
+}
+body .parent .div1 form .msj:hover {
+  background-color: rgba(211, 88, 235, 0.786);
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+
 body {
   font-family: "bebas neue", sans-serif;
   background: linear-gradient(to right, #f046dc 20%, #d107d5 100%);
@@ -18,8 +68,8 @@ body section .lun {
   text-align: center;
   font-size: 2.5em;
   width: 100%;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background: linear-gradient(to top left, #D107D5 43%, #F046DC 77%);
+  color: #fff;
 }
 body section .PanelImg {
   display: grid;
@@ -49,30 +99,25 @@ body section .baner {
   width: 100%;
   height: 500px;
   background-image: url(../img/banner.jpg);
-  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 body section .sobreMi {
-  font-size: 2rem;
-  font-weight: lighter;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
+  padding: 1rem;
+  margin: 1.5rem;
+  font-size: 1.6rem;
 }
 body section .sobreMi2 {
-  font-size: 1.8rem;
-  font-weight: lighter;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  color: whitesmoke;
+  font-size: 1.2rem;
 }
 body article .accordion-body {
   background-color: rgb(195, 72, 240) !important;
 }
 body article .accordion-button {
-  background-color: rgb(241, 129, 228);
+  background: linear-gradient(to right, #f046dc 20%, #d107d5 100%);
 }
 body .parent {
   display: grid;
@@ -85,9 +130,10 @@ body .parent {
 body .parent .div1 {
   padding: 1.5rem;
   border-radius: 12px;
+  text-align: center;
 }
 body .parent .div1 form {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.718);
   max-width: 450px;
   margin: auto;
   display: flex;
@@ -95,16 +141,8 @@ body .parent .div1 form {
   gap: 15px;
 }
 body .parent .div1 form .msj {
-  background-color: rgb(245, 119, 230);
-  border-radius: 15px;
-  border: none;
   color: #fff;
-  padding: 8px 15px;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-body .parent .div1 form .msj:hover {
-  background-color: rgb(195, 72, 240);
+  background-color: rgb(230, 32, 206);
 }
 body .parent .div2 {
   display: grid;
@@ -123,91 +161,72 @@ body .parent .div2 img:hover {
   transform: scale(1.05);
 }
 body div .text-break {
-  font-size: 2rem;
-  color: #f8f9fd;
+  font-size: 1.6rem;
+  color: #fff;
   text-align: justify;
   padding: 2.5rem;
   margin: 1rem;
 }
 
-header nav {
-  padding: 0 !important;
+.Grid {
+  display: flex;
+  gap: 15px;
+  justify-items: center;
+  padding: 5px;
 }
-header nav .container-fluid {
-  background: linear-gradient(to right, #f046dc 20%, #a203a5 100%);
+.Grid .set {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 5%;
+  object-fit: cover;
+  margin: 15px;
+  padding: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-header nav .container-fluid .navbar-brand img {
-  width: 3em;
+.Grid .set:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-header button {
-  background-color: rgb(245, 119, 230);
+
+footer .lista, footer .redes-sociales ul {
+  display: flex;
+}
+
+footer button {
   border-radius: 15px;
   border: none;
-  color: #fff;
   padding: 8px 15px;
   cursor: pointer;
   font-size: 0.9rem;
 }
-header button:hover {
-  background-color: rgb(195, 72, 240);
+footer button:hover {
+  background-color: rgba(230, 88, 235, 0.7);
 }
 
-/*Productos grilla*/
-.Grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-  margin: 2px;
-}
-
-.di1 {
-  grid-area: 1/1/3/2;
-}
-
-.di2 {
-  grid-area: 1/2/3/3;
-}
-
-.di1 img, .di2 img {
-  width: 40%;
-  aspect-ratio: 3/3;
-  border-radius: 2%;
-  transition: transform 0.3s ease;
-  margin: 10px;
-  padding: 5px;
-  box-shadow: 0 4px 15px rgb(0, 0, 0);
-}
-.di1 img:hover, .di2 img:hover {
-  transform: scale(1.2);
-}
-
-/*div .set:hover {
-    transform: scale(1.2);
-}*/
 footer {
   padding: 20px;
-  color: #CECFD2;
+  color: #fff;
   text-align: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.922);
 }
 footer .redes-sociales ul {
-  display: flex;
   justify-content: left;
   gap: 15px;
   list-style: none;
   margin-bottom: 15px;
 }
 footer .redes-sociales a {
-  color: #CECFD2;
+  color: #fff;
   font-size: 1.5rem;
   transition: color 0.3s ease;
   list-style: none;
 }
 footer .redes-sociales a:hover {
-  color: #CECFD2;
+  color: #fff;
 }
 footer .lista {
-  display: flex;
   justify-content: center;
   gap: 40px;
   margin-bottom: 15px;
@@ -216,7 +235,7 @@ footer .lista ul {
   list-style: none;
 }
 footer .lista a {
-  color: #CECFD2;
+  color: #fff;
   text-decoration: none;
 }
 footer .lista a:hover {
@@ -234,50 +253,17 @@ footer input[type=email] {
 }
 footer button {
   background-color: rgb(230, 32, 206);
-  border-radius: 15px;
-  border: none;
   color: #fff;
-  padding: 8px 15px;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-footer button:hover {
-  background-color: rgba(230, 88, 235, 0.7);
 }
 
 /*MEDIAS*/
-@media screen and (max-width: 480px) {
-  .productos-grid {
-    grid-template-columns: 1fr;
-  }
-  .productos {
-    padding: 1.5rem 0.5rem;
-  }
-  .lun {
-    font-size: 1.5rem;
-    padding: 0.8rem;
-  }
-  .baner {
-    background-image: none;
-    height: 50px;
-    background-color: #000000;
-    color: #f8f9fd;
-  }
+@media (max-width: 1024px) {
   .Grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
-  .Grid .di1 img,
-  .Grid .di2 img {
-    display: block;
-    overflow: hidden;
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .set {
+    max-width: 220px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -288,20 +274,14 @@ footer button:hover {
     font-size: 1.2rem;
   }
   .Grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
-  .Grid .di1 img,
-  .Grid .di2 img {
-    display: inline-block;
-    overflow: hidden;
-    width: 40%;
-    height: 40%;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .Grid .di2 {
+    display: none;
+  }
+  .set {
+    max-width: 70%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -309,7 +289,6 @@ footer button:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/*Contactp*/
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .parent {
     grid-template-columns: 1fr 1fr;
@@ -339,5 +318,30 @@ footer button:hover {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+  .productos {
+    padding: 1.5rem 0.5rem;
+  }
+  .lun {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+  .baner {
+    background-image: none;
+    height: 50px;
+    background-color: #000000;
+    color: #f8f9fd;
+  }
+  .di2 {
+    display: none;
+  }
+}
+.set {
+  max-width: 100%;
+  border-radius: 5px;
+}
 
-/*# sourceMappingURL=stilito.css.map */
+/*# sourceMappingURL=style.css.map */
